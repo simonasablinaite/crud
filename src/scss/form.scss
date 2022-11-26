@@ -1,0 +1,80 @@
+.form {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 10px;
+   box-sizing: border-box;
+
+   &.row {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 22px;
+      padding: 5px 0;
+      color: white;
+      font-weight: 100;
+   }
+
+   input[type=text] {
+      font-size: 18px;
+      border: none;
+      font-weight: 400;
+      outline: none;
+      padding: 5px;
+      background-color: rgba(190, 184, 150, 0.4);
+      color: white;
+      width: calc(100% - 10px);
+      letter-spacing: 0.5px;
+   }
+
+   input[type=color] {
+      border: none;
+      outline: none;
+      padding: 5px;
+      background-color: rgba(190, 184, 150, 0.4);
+      color: white;
+      width: 100%;
+      letter-spacing: 0.5px;
+      height: 40px;
+   }
+
+   input[type=checkbox] {
+      display: none;
+
+      &+label {
+         cursor: pointer;
+         user-select: none;
+      }
+
+      &+label+div {
+         display: none;
+      }
+
+      &:checked+label+div {
+         display: block;
+
+         &+div {
+            display: none;
+         }
+      }
+   }
+
+   .c {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: lightcoral;
+   }
+
+   .s {
+      width: 40px;
+      height: 40px;
+      background-color: lightcoral;
+   }
+}

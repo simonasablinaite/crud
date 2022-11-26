@@ -1,13 +1,17 @@
 import "./App.scss";
+import Create from "./Components/Create";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <button className="button-blue">Go</button>
-        <button className="button-green">Edit</button>
-        <button className="button-red">Delete</button>
-      </header>
+      <div className="container">
+        <div className="bin">
+          <div className="box-1">
+            <Create />
+          </div>
+          <div className="box-2">List</div>
+        </div>
+      </div>
     </div>
   );
 }
