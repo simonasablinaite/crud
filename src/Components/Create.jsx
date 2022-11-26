@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import DataContext from "./DataContext";
 
 function Create() {
   const [thing, setThing] = useState("");
